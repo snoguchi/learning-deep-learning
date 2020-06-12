@@ -38,15 +38,31 @@ def predict(network, x):
 
   return y
 
+def doit(network, x, t):
+  accuracy_cnt = 0
+  for i in range(len(x)):
+    y = predict(network, x[i])
+    p = np.argmax(y)
+    if p == t[i]:
+      accuracy_cnt += 1
+  return accuracy_cnt
+
+def doit_with_batch(netowrk, x, t, batch_size):
+  accuracy_cnt = 0
+  for i in range(0, len(x), batch_size):
+    x_batch = x[i:i+batch_size]
+    y_batch = predict(network, x_batch)
+    p = np.argmax(y_batch, axis=1)
+    accuracy_cnt += np.sum(p == t[i:i+batch_size])
+  return accuracy_cnt
+
 x, t = get_data()
 network = init_network()
 
-accuracy_cnt = 0
-for i in range(len(x)):
-  y = predict(network, x[i])
-  p = np.argmax(y)
-  if p == t[i]:
-    accuracy_cnt += 1
-
+accuracy_cnt = doit(network, x, t)
 print("Accuracy:" + str(float(accuracy_cnt) / len(x)))
 
+batch_size = 100
+accuracy_cnt = doit(network, x, t)
+accuracy_cnt = doit_with_batch(network, x, t, batch_size)
+print("Accuracy (Batch):" + str(float(accuracy_cnt) / len(x)))
