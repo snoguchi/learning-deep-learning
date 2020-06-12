@@ -1,4 +1,8 @@
-# ゼロから作るDeep Learning
+# learning-deep-learning
+
+オライリーの[ゼロから作るDeep Learning](https://www.oreilly.co.jp/books/9784873117584/)を読んだ＆写経したメモ
+
+![](https://www.oreilly.co.jp/books/images/picture_large978-4-87311-758-4.jpeg)
 
 ## Python
 - [numpy気持ち悪い](numpy.ipynb)
@@ -46,4 +50,5 @@
 - 4.4.1 学習率
   - 勾配法で進む距離（勾配に対する係数）。ハイパーパラメータの一種
 - 4.5 確率的勾配降下法
-  - 
+
+## ch05
