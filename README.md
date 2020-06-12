@@ -2,7 +2,7 @@
 
 オライリーの[ゼロから作るDeep Learning](https://www.oreilly.co.jp/books/9784873117584/)を読んだ＆写経したメモ
 
-![](https://www.oreilly.co.jp/books/images/picture_large978-4-87311-758-4.jpeg)
+![](https://www.oreilly.co.jp/books/images/picture978-4-87311-758-4.gif)
 
 ## Python
 - [numpy気持ち悪い](numpy.ipynb)
