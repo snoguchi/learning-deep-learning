@@ -1,7 +1,7 @@
 # ゼロから作るDeep Learning
 
-## python
-- numpyのoperator overloadが気持ち悪い。慣れると少ない記述で行列演算できて便利そう
+## Python
+- [numpy気持ち悪い](numpy.ipynb)
 
 ## ch02
 - パーセプトロンで論理回路
